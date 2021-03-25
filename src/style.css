@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+*{
+  box-sizing:border-box;
+}
+body{
+  background-color:#FCF0CC;/*#A64253 #861557*/
+  font-family:'Lato', sans-serif;
+  margin:0;
+}
+nav{
+  background-color:#A64253;
+  color:#fff;
+  display:flex;
+  justify-content:flex-end;
+  padding:20px;
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  z-index:100;
+}
+nav a{
+  color:#fff;
+  margin-left:20px;
+  text-decoration:none;
+}
+header{
+  background-image:url('https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80');
+  background-size:cover;
+  background-position:center center;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  flex-direction:column;
+  height:100vh;
+  position:relative;
+  color:#fff;
+}
+header::after{
+  content:'';
+  background-color:#000;
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  opacity:0.8;
+}
+header * {
+  position:relative;
+  z-index:1;
+}
+header h1{
+  font-size:50px;
+  margin-top:0;
+}
+header p{
+  font-size:25px;
+  margin:0;
+}
+
+section{
+  text-align:center;
+  padding:20px;
+}
+section h2{
+  margin-bottom:0;
+}
+section p{
+  margin-top:0;
+}
+.project-tile{
+  max-width:300px;
+  margin:10px;
+  background-color:#A64253;
+  color:#fff;
+  padding:5px;
+  text-decoration:none;
+    border-radius:5px;
+}
+.project-tile img{
+  max-width:100%;
+  
+}
+.project_wrapper{
+  display:flex;
+  flex-wrap:wrap;
+  align-items: center; 
+  justify-content: center;
+  
+}
+.project p{
+  font-size:20px;
+  margin-top:10px;
+  padding:5px;
+  
+}
+.bg-red{
+  background-color:#A64253;
+  color:#fff;
+}
+
+.social-ul {
+  display:flex;
+  list-style-type:none;
+  margin:0;
+  padding:0px;
+  justify-content: center;
+}
+.social-ul a{
+  color:#fff;
+  font-size:30px;
+  padding:15px;
+  
+}
+footer{
+  background-color:#861557;
+  color:#fff;
+  padding:15px;
+  text-align:center;
+}
+@media(max-width:440px){
+  section{
+    padding:20px;
+  }
+}
